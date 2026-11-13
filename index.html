@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en" prefix="og: https://ogp.me/ns# article: https://ogp.me/ns/article#">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f3eb">
+  <title>How to Read an AI Strategy’s Track Record</title>
+  <meta name="description" content='Eight questions for evaluating AI trading performance: live vs. backtested returns, fees, drawdowns, benchmarks, and on-chain verification.'>
+  <link rel="canonical" href='https://xp-lee.github.io/ai-trading-track-record/'>
+  <link rel="stylesheet" href="./assets/styles.css">
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Xp / Onchain Notes">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="How to Read an AI Strategy’s Track Record">
+  <meta property="og:description" content="Eight questions for evaluating AI trading performance: live vs. backtested returns, fees, drawdowns, benchmarks, and on-chain verification.">
+  <meta property="og:url" content="https://xp-lee.github.io/ai-trading-track-record/">
+  <meta property="og:image" content="https://xp-lee.github.io/ai-trading-track-record/assets/social-card.png">
+  <meta property="og:image:secure_url" content="https://xp-lee.github.io/ai-trading-track-record/assets/social-card.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="How to Read an AI Strategy’s Track Record. Eight questions before you trust the numbers.">
+  <meta property="article:author" content="https://x.com/xbxlxp_lee">
+  <meta property="article:section" content="Strategy evaluation">
+  <meta property="article:published_time" content="2026-11-13">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@xbxlxp_lee">
+  <meta name="twitter:creator" content="@xbxlxp_lee">
+  <meta name="twitter:title" content="How to Read an AI Strategy’s Track Record">
+  <meta name="twitter:description" content="Eight questions for evaluating AI trading performance: live vs. backtested returns, fees, drawdowns, benchmarks, and on-chain verification.">
+  <meta name="twitter:image" content="https://xp-lee.github.io/ai-trading-track-record/assets/social-card.png">
+  <meta name="twitter:image:alt" content="How to Read an AI Strategy’s Track Record. Eight questions before you trust the numbers.">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": "https://xp-lee.github.io/ai-trading-track-record/",
+  "headline": "How to Read an AI Strategy’s Track Record",
+  "description": "Eight questions for evaluating AI trading performance: live vs. backtested returns, fees, drawdowns, benchmarks, and on-chain verification.",
+  "datePublished": "2026-11-13",
+  "inLanguage": "en",
+  "author": {
+    "@type": "Person",
+    "name": "Xp",
+    "url": "https://x.com/xbxlxp_lee"
+  },
+  "image": [
+    "https://xp-lee.github.io/ai-trading-track-record/assets/social-card.png"
+  ],
+  "timeRequired": "PT8M"
+}
+  </script>
+</head>
+
+<body>
+  <a class="skip" href="#article">Skip to article</a>
+  <header class="masthead">
+    <a href='https://xp-lee.github.io/onchain-notes/'>Xp / Onchain Notes</a>
+    <a href="https://x.com/xbxlxp_lee">@xbxlxp_lee ↗</a>
+  </header>
+  <main id="article"><article>
+    <header class="intro">
+      <p class="eyebrow">Strategy evaluation</p>
+      <h1>How to Read an AI Strategy’s Track Record</h1>
+      <p class="deck">A PnL screenshot is the start of a question, not the answer. Eight questions I ask before trusting any strategy’s numbers — including the ones from the company I work for.</p>
+      <p class="byline">By <a href="https://x.com/xbxlxp_lee">Xp</a> · BD at <a href="https://alphanet.global/">AlphaNet</a> · ~8 min read</p>
+      <p class="byline"><time datetime="2026-11-13">November 13, 2026</time> · Personal views</p>
+    </header>
+    <nav class="contents" aria-label="Eight questions"><h2>In this article</h2><ul><li><a href="#section-1-what-kind-of-record-is-this">1. What kind of record is this?</a></li><li><a href="#section-2-over-what-period-and-who-chose-it">2. Over what period — and who chose it?</a></li><li><a href="#section-3-what-s-left-out-of-the-number">3. What’s left out of the number?</a></li><li><a href="#section-4-how-bad-did-it-get">4. How bad did it get?</a></li><li><a href="#section-5-where-did-the-return-come-from">5. Where did the return come from?</a></li><li><a href="#section-6-how-is-the-average-built">6. How is the average built?</a></li><li><a href="#section-7-can-you-check-it-yourself">7. Can you check it yourself?</a></li><li><a href="#section-8-why-might-your-account-look-different">8. Why might your account look different?</a></li></ul></nav>
+    <div class="prose">
+<p>Every AI trading product has a chart that goes up and to the right. Some of those charts are honest. Some are honest but incomplete. A few are built to impress rather than inform. From the outside, they look identical.</p>
+<p>You don’t need to be a quant to tell them apart. You need to know which questions to ask, and what a good answer sounds like. Here are the eight I ask of any strategy, including the ones I help bring to users.</p>
+<h2 id="section-1-what-kind-of-record-is-this">1. What kind of record is this?</h2>
+<p>Not all performance numbers are the same kind of evidence. Before reading the number, read the label.</p>
+<div class="table-wrap" role="region" aria-label="Types of strategy performance records" tabindex="0"><table><caption>Four types of strategy performance records</caption><thead><tr><th scope="col">Type</th><th scope="col">What it is</th><th scope="col">How much weight to give it</th></tr></thead><tbody><tr><td>Backtest</td><td>The strategy’s rules applied to historical data</td><td>Useful for design; weakest as evidence. It is easy to fit the past.</td></tr><tr><td>Forward simulation</td><td>Rules fixed in advance, run on new data without real money</td><td>Better: the future wasn’t known when the rules were set. Fills are still assumed.</td></tr><tr><td>Live model record</td><td>The strategy trading with real capital from a fixed start date</td><td>Strong: real orders, real fills, real market impact.</td></tr><tr><td>Individual account</td><td>One user’s actual results</td><td>The ground truth for that user — but shaped by when they joined and how much they deployed (see question 8).</td></tr></tbody></table></div>
+<p>A good report says which one it is, and where one ends and another begins. Be careful with records that blend a backtest into a live track record without a clear seam, or that quote “since inception” returns when inception was a simulation.</p>
+<h2 id="section-2-over-what-period-and-who-chose-it">2. Over what period — and who chose it?</h2>
+<p>Any strategy looks brilliant over the right month. The question is whether the window was chosen before or after the results were known.</p>
+<ul class="question-list">
+<li><strong>Look for the full history, not just the highlight. </strong>A one-day or one-week result shows how a strategy behaved in a specific event. It doesn’t prove it can repeat that.</li>
+<li><strong>Ask how examples were selected. </strong>Spotlighting a few standout strategies is fine, as long as the report says it’s a selection and shows where to find the rest.</li>
+<li><strong>Ask what happened to the strategies that didn’t make it. </strong>Strategies get retired and models get retrained. A record that only includes today’s survivors will look better than the history really was.</li>
+</ul>
+<h2 id="section-3-what-s-left-out-of-the-number">3. What’s left out of the number?</h2>
+<p>Reported returns are often gross. What you keep is net.</p>
+<ul class="question-list">
+<li><strong>Trading fees. </strong>Check whether they’re included. If not, estimate them: number of trades × typical position size × fee rate, on both entry and exit. For high-frequency strategies, this can be material.</li>
+<li><strong>Slippage. </strong>The gap between the price a model decided on and the price it actually got.</li>
+<li><strong>Funding. </strong>On Hyperliquid perpetuals, holding a position costs or earns funding every hour. Over long holding periods, it adds up in either direction.</li>
+<li><strong>Platform fees. </strong>Subscription, performance or per-trade fees charged by the product itself.</li>
+</ul>
+<p>A report that leaves some of these out isn’t necessarily misleading — but it should say so clearly, and it should give you enough information (trade counts, holding periods, exposure) to estimate the difference yourself.</p>
+<h2 id="section-4-how-bad-did-it-get">4. How bad did it get?</h2>
+<p>Return tells you what you might earn. Drawdown tells you what you’d have to sit through to earn it.</p>
+<ul class="question-list">
+<li><strong>Maximum drawdown: </strong>the largest peak-to-trough fall. Ask for it over the full history, not just the last 30 days.</li>
+<li><strong>How it’s measured: </strong>drawdowns calculated only on closed trades can look smaller than what an account actually experienced while positions were open. Mark-to-market drawdown is the fuller picture.</li>
+<li><strong>Recovery time: </strong>how long it took to get back to the previous high. A 20% drawdown that recovers in two weeks feels very different from one that takes six months.</li>
+<li><strong>Return concentration: </strong>many directional strategies earn most of their annual return in a few months. That’s not a flaw, but it means a quiet quarter isn’t necessarily broken, and one great month isn’t necessarily skill.</li>
+</ul>
+<h2 id="section-5-where-did-the-return-come-from">5. Where did the return come from?</h2>
+<p>Two strategies with the same return can carry very different risks.</p>
+<ul class="question-list">
+<li><strong>Direction: </strong>did it make money because the market went up (or down), or did it beat the market it traded? Compare it with simply holding the asset over the same window.</li>
+<li><strong>Long vs. short: </strong>a strategy that only made money on shorts during a falling market tells you about that market as much as about the strategy.</li>
+<li><strong>Concentration: </strong>if a basket of strategies is up, check how much one asset or one strategy contributed. A useful test: what’s left if you remove the single best performer?</li>
+<li><strong>Funding and execution: </strong>some returns come from collecting funding or from fast execution rather than from predicting price. Neither is bad, but they behave differently when markets change.</li>
+</ul>
+<h2 id="section-6-how-is-the-average-built">6. How is the average built?</h2>
+<p>“Our strategies returned X%” can mean several different things.</p>
+<ul class="question-list">
+<li><strong>Equal-weighted: </strong>each strategy counts the same. Simple and fair, but check whether they all started on the same date. A basket of strategies that joined at different times isn’t one portfolio anyone could have held from day one.</li>
+<li><strong>Capital-weighted: </strong>weighted by how much money users put into each strategy. This reflects where users actually were, but it also reflects when money arrived. Capital that flows in after a strong run can make the weighted figure look very different from what a typical user earned.</li>
+<li><strong>Time-weighted: </strong>removes the effect of deposits and withdrawals. This is the closest to “how good was the strategy itself.”</li>
+</ul>
+<p>None of these is wrong. But they answer different questions, and a headline number should say which one it is. Equal- and capital-weighting describe how strategies are combined; time-weighting describes how returns are measured around cash flows. A report can use both.</p>
+<h2 id="section-7-can-you-check-it-yourself">7. Can you check it yourself?</h2>
+<p>The strongest track record is one you don’t have to take on trust.</p>
+<p>On-chain venues like Hyperliquid make every order, fill and position public. If a strategy runs there, ask for the address. You can then verify trades, holding periods, leverage and drawdowns yourself — or use public explorers like Hypurrscan or Hyperdash to do it for you.</p>
+<p>If a product can’t show you where the trades happened, treat its numbers as a claim rather than a record.</p>
+<h2 id="section-8-why-might-your-account-look-different">8. Why might your account look different?</h2>
+<p>Even when a strategy’s record is accurate, your own result can differ. That’s not necessarily a red flag — it’s arithmetic.</p>
+<ul class="question-list">
+<li><strong>Timing: </strong>joining after a strong run, or just before a drawdown, changes your experience of the same strategy.</li>
+<li><strong>Size: </strong>larger allocations can get worse fills than the model’s reference account.</li>
+<li><strong>Costs: </strong>your fees, funding and any platform charges apply to your account, even if they’re not in the headline figure.</li>
+<li><strong>Actions: </strong>pausing during a drawdown and restarting after a recovery can lock in losses the strategy itself didn’t have.</li>
+</ul>
+<p>A good provider explains this gap upfront, and makes your own account’s performance easy to see next to the strategy’s record.</p>
+<h2 id="section-the-checklist">The checklist</h2>
+<ul class="question-list">
+<li>Is this a backtest, a forward simulation, a live record or an account result?</li>
+<li>What is the full period, and how were any highlighted examples chosen?</li>
+<li>Are retired or replaced strategies still in the history?</li>
+<li>Are fees, slippage and funding included? If not, can I estimate them?</li>
+<li>What is the maximum drawdown, how is it measured, and how long did recovery take?</li>
+<li>How did the strategy compare with holding the same asset?</li>
+<li>How much of the result came from one asset, one direction or one month?</li>
+<li>Is the average equal-, capital- or time-weighted?</li>
+<li>Can I verify the trades on-chain?</li>
+<li>How will my own account’s result differ, and where can I see it?</li>
+</ul>
+<h2 id="section-why-i-m-writing-this-and-a-disclosure">Why I’m writing this (and a disclosure)</h2>
+<p>I work on business development at AlphaNet, which runs AI quant strategies on users’ own Hyperliquid accounts. That’s exactly why this list matters to me. In BD conversations, the people worth working with ask these questions, and the products worth recommending can answer them.</p>
+<p>I’m not going to tell you which strategy to pick. I’d rather you ask better questions — of AlphaNet, and of everyone else. If you put any of these to us and don’t get a clear answer, tell me.</p>
+<p>The point isn’t to find a strategy with a perfect record. There isn’t one. It’s to understand exactly what a record does and doesn’t tell you before you put money behind it.</p>
+<p><em>Views are my own and do not represent AlphaNet. Not investment advice. Trading involves substantial risk of loss. Past performance does not guarantee future results.</em></p>
+    </div>
+    <footer class="article-footer">
+      <nav aria-label="Related research">
+        <a href='https://xp-lee.github.io/onchain-notes/'>More from Onchain Notes</a>
+        <a href="https://xp-lee.github.io/hyperliquid-referral-capital/">Who Actually Brings Capital to Hyperliquid?</a>
+        <a href="https://xp-lee.github.io/can-ai-trade-crypto-llm-banchmark/">Can AI Trade Crypto?</a>
+      </nav>
+    </footer>
+  </article></main>
+</body>
+</html>
